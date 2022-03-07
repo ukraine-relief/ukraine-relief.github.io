@@ -1,15 +1,41 @@
-# ukraine-relief.github.io
+# Website
 
-This repo contains the code for the landing page of the Ukraine Relief tech community.
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-## Where to start:
+### Installation
 
-Join our discord server: https://t.co/N8jRxvvRh3
+```
+$ yarn
+```
 
-## What are you getting?
+### Local Development
 
-This is a simple web page. No magic, just a simple 'index.html', with a dollop of [Bootstrap](https://getbootstrap.com/).
+```
+$ yarn start
+```
 
-## How do I contribute?
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-Leave a PR.
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
